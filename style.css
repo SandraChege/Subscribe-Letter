@@ -1,0 +1,124 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+/*Import fonts*/
+@font-face {
+    font-family: MyFont;
+    src: url(./assets/fonts/Roboto-Regular.ttf);
+}
+:root{
+    --DarkSlateGrey: hsl(234, 29%, 20%);
+    --CharcoalGrey: hsl(235, 18%, 26%);
+    --Grey: hsl(231, 7%, 60%);
+    --White: hsl(0, 0%, 100%);
+    --Tomato: hsl(4, 100%, 67%);
+}
+body{
+    font-family: MyFont;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: var(--DarkSlateGrey);
+}
+.card{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 70vw;
+    background-color: var(--White);
+    padding: 30px;
+    border-bottom: 20px;
+    height: 90vh;
+    border-radius: 20px;
+}
+.right{
+    width: 60%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: center; */
+}
+.right h1{
+    font-size: 30px;
+}
+.right p{
+    padding-top: 20px;
+    padding-bottom: 10px;
+} 
+ul {
+    list-style-image: url(./assets/images/icon-success.svg);
+    padding: 20px;
+}
+ul li{
+    margin-bottom: 10px;
+}
+form{
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+}
+label{
+    margin-bottom: 10px;
+}
+input{
+    padding: 10px 20px;
+    font-family: inherit;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid var(--Grey);
+}
+form button{
+    background-color: var(--CharcoalGrey);
+    padding: 15px 20px;
+    border-radius: 5px;
+    margin-top: 0.7rem;
+    outline: none;
+    color: var(--White);
+    font-family: inherit;
+    border: 1px solid var(--CharcoalGrey);
+    cursor: pointer;
+}
+form button:hover{
+    background-color: var(--Tomato);
+    border: 1px solid var(--Tomato);
+}
+.left {
+    width: 40%;
+}
+.left img{
+    width: 95%;
+}
+.hide{
+    display: none;
+}
+.card2{
+    background-color: var(--White);
+    width: 30%;
+    padding: 20px;
+    border-radius: 10px;
+}
+.card2 h1{
+    font-size: 40px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.icon-card2{
+    width: 40px;
+}
+.card2 button{
+    margin-top: 20px;
+    outline: none;
+    background-color: var(--CharcoalGrey);
+    width: 100%;
+    padding: 10px 20px;
+    color: var(--White);
+    border: 1px solid var(--CharcoalGrey);
+}
+.card2 button:hover{
+    background-color: var(--Tomato);
+    border: 1px solid var(--Tomato);
+}
